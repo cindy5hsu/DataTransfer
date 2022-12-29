@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<a href="/Home/P010/?userName=allen">ViewData</a>
+<br />
+<a href="/Home/P015/">ViewData.Model</a>
+<br />
+
+<a href="/Home/P020/?userName=allen&gender=true">ViewBag</a>
+<br />
+
+<a href="/Home/P030/?userName=allen">TempData, 有傳遞 userName</a>
+|
+<a href="/Home/P030/">TempData, 沒有傳遞 userName</a>
+<br />
+<a href="/Home/P035/">TempData, 用 Peek讀 TempData 值</a>
+<br />
+<a href="/Home/P037/">TempData, 讀取之後, 再用 Keep() 將值標註成尚未被刪除</a>
+<br />

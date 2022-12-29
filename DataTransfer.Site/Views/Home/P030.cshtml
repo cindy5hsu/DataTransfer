@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "P030";
+
+    string keyOfUserName = "userName";
+    string userName = TempData[keyOfUserName] as string;
+}
+
+<h2>P030</h2>
+
+<p>@userName</p>
+
+<p>@TempData[keyOfUserName] 記錄已經順利從 TempData 取得</p>
+
+

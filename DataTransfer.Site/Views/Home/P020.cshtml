@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "P020";
+
+    string keyOfUserName = "userName";
+    string userName = ViewData[keyOfUserName] as string;
+    string userName2 = ViewBag.USERName as string;
+    string userName3 = ViewData["USERNAME"] as string;
+}
+
+<h2>P020</h2>
+<p>@userName</p>
+<p>@userName2</p>
+<p>@userName3</p>
+
+<p>@ViewData["gender"]</p>
+<p>@ViewBag.Gender</p>
+
+大小寫相同
+<p>@ViewBag.gender</p>
+
+

@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "P030Err";
+}
+
+<h2>P037 Err</h2>
+錯誤訊息: @TempData["err"]
+
+<br />此時, TempData("err") 值已經被標註成刪除<br />
+
+@{
+    TempData.Keep("err");
+}
+
+此時, TempData("err") 值又被標示成有效<br />
+
+
+<div>由於使用 TempData.Keep() 標註為尚未刪除, 您試著按 F5, reload page, 會發現仍取得 TempData 值

@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "P010";
+
+    string keyOfUserName = "userName";
+    string userName = ViewData[keyOfUserName] as string;
+}
+
+<h2>P010</h2>
+<p>@userName</p>
+
+<p>@ViewData[keyOfUserName]</p>
+
+取得一個不存在的 key, 不會發生錯誤, 只是沒有值
+<p>@ViewData["dummy"]</p>
+
+

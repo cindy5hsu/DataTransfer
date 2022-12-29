@@ -1,0 +1,8 @@
+﻿@{
+    ViewBag.Title = "P030Err";
+}
+
+<h2>P035 Err</h2>
+錯誤訊息: @TempData.Peek("err")
+
+<div>由於使用 TempData.Peek() 取用, 這個值不會被標註成必需刪除, 您試著按 F5, reload page, 會發現仍取得 TempData 值
